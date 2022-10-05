@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main() {
+   int marks[10];
+   int high = 0;
+   int index;
+   for(int i = 0; i < 10; i++) {
+    cout << "Enter marks of Student " << i+1 << " : "; cin >> marks[i];
+    if(high < marks[i]) {
+        high = marks[i];
+        index = i;
+    }
+   }
+   // here printing the values
+   cout << "Highest Value is = " << high << " with roll no: " << index+1;
+    return 0;
+}
